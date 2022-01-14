@@ -1,0 +1,821 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*------------- common css------------------- */
+/* main-body */
+#bg-main-container {
+  background-color: #0c1126;
+  height: auto;
+}
+/* sections header */
+.common-section-header {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.common-section-header p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*------- hide scrollbar ------------*/
+main::-webkit-scrollbar {
+  display: none;
+}
+aside::-webkit-scrollbar {
+  display: none;
+}
+#queue-2::-webkit-scrollbar {
+  display: none;
+}
+/* responsiveness */
+
+/* ---------------main top header--------------- */
+#top-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 420px;
+}
+/* logo */
+#logo {
+  display: flex;
+  align-items: center;
+  width: 17%;
+  justify-content: flex-start;
+}
+/* logo-image */
+#logo img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 4px;
+}
+/* text */
+#logo p {
+  color: white;
+  margin: 10px;
+}
+/* search profile container */
+.search-profile-container {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* search-box */
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  width: 70%;
+  min-width: 150px;
+}
+/* search-icon */
+.search-box i {
+  color: white;
+  margin-left: 0.3rem;
+}
+/* search-icon hovering */
+.search-box i:hover {
+  transform: scale(1.2);
+}
+/* input-box */
+.search-box input {
+  width: 80%;
+  padding: 0.1rem;
+  text-align: center;
+  background-color: #21274b;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+/* input-box hovering */
+.search-box input:focus {
+  outline: none;
+}
+/* bell-icon */
+.bell {
+  color: white;
+  font-size: 1rem;
+  margin: 1rem;
+}
+/* my-photo */
+.profile-photo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+/* --------------------main---------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 5rem;
+}
+
+/* crousel-image-container */
+.crousel-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* img container*/
+.img-container {
+  width: 30%;
+}
+/* image tag */
+.img-container img {
+  width: 100%;
+}
+/* img tag hovering */
+.img-container img:hover {
+  transform: scale(1.2);
+}
+
+/* -------latest-release-container----------- */
+.latest-release-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+/* cards container */
+.latest-release-card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+/* card */
+.latest-release-card-container .card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 47%;
+}
+/* song name and image container */
+.song-name-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* image container */
+.image-container {
+  background-image: url(../songs/onism.jpg);
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+  position: relative;
+}
+/* name*/
+.name-container .song-name {
+  color: white;
+  font-size: 1rem;
+}
+/* date */
+.name-container .date {
+  color: white;
+  font-size: 0.6rem;
+}
+/* dropdown container*/
+.latest-release-dropdown-container {
+  position: relative;
+}
+/* dots sign */
+label .more-details {
+  color: rgba(255, 255, 255, 0.815);
+}
+/* dropdown */
+.latest-release-dropdown {
+  position: absolute;
+  z-index: 2;
+  height: 0;
+  overflow: hidden;
+  top: 1rem;
+  left: -6.9rem;
+  background-color: white;
+  text-align: center;
+  transition: all 0.2s linear;
+  /* border: 2px solid white; */
+}
+/* dropdown anchors */
+.latest-release-dropdown a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+}
+/* removing box sign from checkbox */
+#latest-release-checkbox-1,
+#latest-release-checkbox-2,
+#latest-release-checkbox-3,
+#latest-release-checkbox-4 {
+  display: none;
+}
+/* selecting  */
+#latest-release-checkbox-1:checked~div,
+#latest-release-checkbox-2:checked~div,
+#latest-release-checkbox-3:checked~div,
+#latest-release-checkbox-4:checked~div {
+  height: auto;
+  width: 8.7rem;
+  padding: 0.3rem;
+}
+
+.links-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.links-container i {
+  color: #8d89ad;
+  margin-right: 0.7rem;
+}
+/* time */
+.time {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/*-------------- popular-artists-container---------- */
+.popular-artists-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.popular-artist-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.7rem;
+}
+
+.popular-artists-1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 15%;
+}
+
+.popular-artists-1-container p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.popular-artists-img1-container {
+  width: 75%;
+  position: relative;
+  overflow: hidden;
+}
+
+.popular-artists-img1-container:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.popular-artists {
+  position: absolute;
+  padding-top: 42%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../songs/ed-sheeran.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-size: cover;
+  border-radius: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.popular-artists-2 {
+  background-image: url(../songs/cold-play.jpg) !important;
+}
+
+.popular-artists-3 {
+  background-image: url(../songs/zayn.jpg) !important;
+}
+
+.popular-artists-4 {
+  background-image: url(../songs/cold-play.jpg) !important;
+}
+
+.popular-artists-5 {
+  background-image: url(../songs/ed-sheeran.jpg) !important;
+}
+
+.popular-artists-6 {
+  background-image: url(../images/) !important;
+}
+
+.popular-artists > a {
+  position: static;
+  height: 0;
+  display: none;
+  overflow: hidden;
+  color: white;
+}
+
+.popular-artists:hover > a {
+  height: 4rem;
+  display: inline;
+}
+
+.popular-artists:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+/* -------------station container---------------- */
+.stations-container {
+  width: 100%;
+  background-color: #101743;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 2rem;
+}
+/* station logo image container*/
+.station-logo-image-container {
+  display: flex;
+  position: relative;
+}
+.station-logo-image-container img {
+  width: 100%;
+}
+/* images main container */
+.images-container {
+  width: 12%;
+  position: relative;
+  margin-right: 1%;
+}
+/* common image container */
+.image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.image:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+/* common img properties */
+.img-body {
+  filter: blur(0.9px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+/* image1 */
+.img1 {
+  background-image: url(../images/pop.jpg);
+}
+/* image2 */
+.img2 {
+  background-image: url(../images/party.jpg);
+}
+/* image3 */
+.img3 {
+  background-image: url(../images/retro.png);
+}
+/* image4 */
+.img4 {
+  background-image: url(../images/chill.jpg);
+}
+/* image5 */
+.img5 {
+  background-image: url(../images/workout.jpg);
+}
+/* image 6 */
+.img6 {
+  background-image: url(../images/rock.jpg);
+}
+/* station para */
+.stations-para {
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  color: white;
+  top: 50%;
+  margin-top: -5px;
+  left: 0;
+  right: 0;
+  font-size: 0.9rem;
+}
+
+/* ------------genre container-------------- */
+.genre-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+/* genre image container */
+.genre-image-container {
+  width: 32%;
+  display: flex;
+  position: relative;
+}
+/* genre-img */
+.genre-img {
+  position: relative;
+  transition: 0.5s;
+}
+/* actual image */
+.genre-img img {
+  width: 100%;
+}
+/* p tag */
+.genre-image-container p {
+  color: #fafafb;
+  text-align: center;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* image hovering effect */
+.genre-img:hover {
+  transform: scale(1.1);
+}
+
+/* --------latest english----------*/
+/* container */
+.latest-english-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  height: auto;
+  flex-direction: column;
+}
+/* all cards container */
+.all-cards-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+/* song-container */
+.song-container {
+  display: flex;
+  flex-direction: column;
+  width: 13%;
+  position: relative;
+}
+/* image container */
+.eng-song-image-container {
+  position: relative;
+}
+/* image */
+.eng-song-image-container img {
+  width: 100%;
+}
+/* song name */
+.song-container .song-name {
+  color: white;
+  margin-top: 0.2rem;
+}
+/* date */
+.song-container .date {
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+/* --------------queue1 queue---------------- */
+.queue-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+/* queue header */
+.queue-header {
+  color: #cecfd3;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+/* hide the checkbox */
+.queue-header input {
+  display: none;
+}
+.queue-header label {
+  font-size: 0.8rem;
+  color: #51e2c2;
+}
+.queue-btn-container {
+  position: relative;
+}
+/* queue dropdown */
+.queue-btn-dropdown {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  top: 1.5rem;
+  left: -4rem;
+  background-color: white;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+.queue-btn-dropdown a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+}
+
+/* making queue dropdown buttn working */
+#checkbox-1:checked ~ div {
+  height: auto;
+  padding: 0.3rem;
+}
+#checkbox-2:checked ~ div {
+  height: auto;
+  padding: 0.3rem;
+}
+/* queue-element-container */
+.queue-elements-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* queue element */
+.queue-element {
+  margin-bottom: 0.6rem;
+  width: 100%;
+  background-color: #24273d;
+  display: flex;
+  align-items: center;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+  justify-content: space-between;
+}
+/* song image container */
+.song-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+/* queue number */
+.queue-number {
+  font-size: 0.8rem;
+  color: #8092a1;
+  margin-right: 1rem;
+}
+/* image container */
+.song-img-container {
+  position: relative;
+}
+/* image*/
+.queue-song-img {
+  width: 3rem;
+  border-radius: 0.4rem;
+  margin-right: 1rem;
+}
+.queue-song-img ~ i {
+  transition: all 0.2s ease-in-out;
+}
+/* image hovering */
+.queue-song-img ~ i:hover {
+  opacity: 0.9;
+  height: 1rem;
+}
+/* heart icon hovering */
+.queue-song-img:hover ~ i {
+  opacity: 0.9;
+  height: 1rem;
+}
+/* heart icon */
+.wishlist-icon {
+  color: #92a6b3;
+  padding-right: 3rem;
+}
+
+/* play-btn */
+.play-btn {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  color: white;
+  top: 1rem;
+  left: 1rem;
+}
+/* queue song name */
+.queue-song-name,
+.queue-artist-name {
+  font-size: 0.9rem;
+  color: #f6f7f9;
+  margin-bottom: 0.5rem;
+}
+
+/*---------- footer---------------- */
+footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: #282828;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+}
+#footer-song-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+#footer-song-info > div {
+  margin: 1vh;
+}
+#footer-song-image {
+  height: 4rem;
+  width: 4rem;
+  margin: 1vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../songs/ed-sheeran.jpg);
+}
+#footer-song-name {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.name {
+  font-weight: 600;
+  font-size: 15px;
+}
+.subtitle {
+  color: #c0c0c0;
+  font-size: 0.9rem;
+  margin: 0.1rem;
+}
+
+/* player control */
+.player {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.player-control {
+  width: 50%;
+}
+.player-slider-container {
+  width: 100%;
+}
+input[type="range"] {
+  width: 80%;
+  /* -webkit-appearance: none; */
+}
+/* input[type="range"]::-webkit-slider-runnable-track{
+    cursor: pointer;
+    border: 1px solid #29334f;
+    background-color: #51e2c2;
+  
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 9px;
+  width: 15px;
+  -webkit-appearance: none;
+  background: black;
+} */
+
+/* player extra */
+.player-extra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  min-width: 12%;
+}
+/* volume control */
+.volume-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* volume-slider */
+
+/* icons */
+.list-icon i,
+.comp-icon i,
+.volume-container i {
+  font-size: 20px;
+  margin-right: 9px;
+}
+/* ---------------------Media Queries----------------- */
+
+/* media query for xtra small */
+@media (min-width: 365px) {
+  html {
+    font-size: 9px;
+  }
+  #queue-2 {
+    display: none;
+  }
+}
+
+/* media query for small devices */
+@media (min-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+  .playlist-card-container {
+    width: 80%;
+}
+}
+
+/* media query for medium devices */
+@media (min-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .responsiveness {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  main {
+    width: 66%;
+    height: 75vh;
+    overflow-y: auto;
+}
+aside {
+  width: 34%;
+  height: 75vh;
+  overflow-y: auto;
+}
+  #queue-1 {
+    display: none;
+  }
+  #queue-2 {
+    display: block;
+    width: 35%;
+    height: 90vh;
+    overflow-y: auto;
+    margin-bottom: 50px;
+  }
+  
+}
+
+/* media query for large devices */
+@media (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* media query for x-large devices */
+@media (min-width: 1200px) {
+  html {
+    font-size: 17px;
+  }
+}
+
